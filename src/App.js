@@ -1,6 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/public/HomePage';
+import AboutPage from './pages/public/AboutPage';
+import BlogPage from './pages/public/BlogPage';
+import ContactPage from './pages/public/ContactPage';
+import ProductsPage from './pages/public/ProductsPage';
 
 function App() {
   return (
@@ -60,6 +64,7 @@ function App() {
   );
 }
 
+
 const TestPage = () => (
   <div>
     <h1 className="text-3xl font-bold text-gray-900 mb-8">Test Page</h1>
@@ -73,43 +78,6 @@ const TestPage = () => (
           <li>• Tailwind CSS: <span className="text-green-600">Working</span></li>
         </ul>
       </div>
-    </div>
-  </div>
-);
-
-// Temporary placeholder pages - will be replaced with real components once import paths are fixed
-const AboutPage = () => (
-  <div>
-    <h1 className="text-3xl font-bold text-gray-900 mb-8">Tentang Muniful Ikhsan Alhafizi</h1>
-    <div className="bg-white rounded-lg shadow-lg p-8">
-      <p className="text-gray-600">Halaman About sedang dalam pengembangan...</p>
-    </div>
-  </div>
-);
-
-const BlogPage = () => (
-  <div>
-    <h1 className="text-3xl font-bold text-gray-900 mb-8">Blog & Artikel</h1>
-    <div className="bg-white rounded-lg shadow-lg p-8">
-      <p className="text-gray-600">Halaman Blog sedang dalam pengembangan...</p>
-    </div>
-  </div>
-);
-
-const ContactPage = () => (
-  <div>
-    <h1 className="text-3xl font-bold text-gray-900 mb-8">Kontak</h1>
-    <div className="bg-white rounded-lg shadow-lg p-8">
-      <p className="text-gray-600">Halaman Contact sedang dalam pengembangan...</p>
-    </div>
-  </div>
-);
-
-const ProductsPage = () => (
-  <div>
-    <h1 className="text-3xl font-bold text-gray-900 mb-8">Materi Premium</h1>
-    <div className="bg-white rounded-lg shadow-lg p-8">
-      <p className="text-gray-600">Halaman Products sedang dalam pengembangan...</p>
     </div>
   </div>
 );
