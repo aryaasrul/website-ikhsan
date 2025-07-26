@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { supabase } from '../../utils/supabase';
+import { formatDate, truncateText } from '../../utils/helpers';
 
 const AboutPage = () => {
   const [profileData, setProfileData] = useState(null);

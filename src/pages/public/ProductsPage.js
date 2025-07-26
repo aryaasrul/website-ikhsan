@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { supabase } from '../utils/supabase';
-import { formatPrice } from '../utils/helpers';
+import { supabase } from '../../utils/supabase';
+import { formatDate, truncateText } from '../../utils/helpers';
 
 const ProductsPage = () => {
   const [products, setProducts] = useState([]);
